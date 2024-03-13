@@ -10,7 +10,7 @@ return
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", "omnisharp", "neocmake", "pylsp", "rust_analyzer", "zls" },
+                ensure_installed = { "lua_ls", "clangd", "cmake", "omnisharp", "pylsp", "rust_analyzer", "zls", },
             })
         end
     },
