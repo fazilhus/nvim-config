@@ -10,7 +10,15 @@ return
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "clangd", "cmake", "omnisharp", "pylsp", "rust_analyzer", "zls", },
+                ensure_installed = { 
+                    "lua_ls",
+                    "clangd",
+                    "cmake",
+                    "omnisharp",
+                    "pylsp",
+                    "rust_analyzer",
+                    "zls", 
+                },
             })
         end
     },
@@ -19,6 +27,13 @@ return
         config = function()
             local lspcfg = require("lspconfig")
             lspcfg.lua_ls.setup({})
+            lspcfg.clangd.setup({})
+            lspcfg.cmake.setup({})
+            lspcfg.omnisharp.setup({})
+            lspcfg.pylsp.setup({})
+            lspcfg.rust_analyzer.setup({})
+            lspcfg.zls.setup({})
+
             -- setup other lsp's
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gD', vim.lsp.buf.definition, {})
