@@ -10,7 +10,4 @@ return
             vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
         end
     },
-    {
-        "nvim-telescope/telescope-ui-select.nvim",
-    },
 }
