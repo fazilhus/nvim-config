@@ -1,0 +1,1 @@
+My cool NeoVim config
